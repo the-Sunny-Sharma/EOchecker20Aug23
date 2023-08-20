@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Even Odd Checker</title>
+    <style>
+      *{
+        font-size : 35px;
+      }
+      .nav{
+        background-color:black;
+      }
+      .nav a{
+        color: white;
+        text-decoration:none;
+        padding: 15%;
+      }
+      body{
+        background-color:lightblue;
+      }
+      #targetDiv {
+      width: 50%;
+      height: auto;
+      transition: background-color 0.5s ease;
+    }
+    .center{
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      left: 20%;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </div>
+
+<br><br>
+    <div class="center" id="targetDiv">
+      <h2>
+        <p>Sunny Sharma</p>
+        <p>JS MERN Engineer</p>
+      </h2>
+    </div>
+    <script>
+
+    const colors = ["red", "blue", "green", "orange", "lightblue"];
+
+    function change(){
+      let color_names = ["red", "green", "blue", "pink"];
+      let r = parseInt(Math.random() * color_names.length);
+      targetDiv.style.backgroundColor = color_names[r];
+    }
+    setInterval(change, 1000);
+    </script>
+
+  </body>
+</html>
